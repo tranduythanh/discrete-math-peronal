@@ -1,0 +1,17 @@
+\begin{figure}[hbt!]
+\centering
+\begin{tikzpicture}[fill=gray]
+      \draw ( 0,0 ) circle (2) (-0.5,1.2)  node [text=black,above] {$P$}
+            ( 3,0 ) circle (2) (3.8,1.2)  node [text=black,above] {$Q$}
+            (-3,-3) rectangle (9,4) node [text=black,above] {$\mathcal U$};
+      \filldraw[black] (1.3,0) circle (2pt) node[anchor=west] {$a$};
+      \filldraw[black] (3,0) circle (2pt) node[anchor=west] {$b$};
+\end{tikzpicture}
+\caption{Venn diagram for problem 1.1.1 \\
+      - P: is the set of $x$ satisfies $p(x)$.\\
+      - Q: is the set of $x$ satisfies $q(x)$.\\
+      - $\forall x \in \mathcal U: p(x)\rightarrow q(x) \equiv \neg p(x)\lor q(x)$ \\
+      - $a \in \mathcal U$ is the point satisfies $q(a)\rightarrow p(a) \equiv \neg q(a)\lor p(a)$ \\
+      - $\exists b\in\mathcal U: \neg(q(b)\rightarrow p(b)) \equiv \neg(q(b) \rightarrow p(b))$ so given argument is invalid
+}
+\end{figure}

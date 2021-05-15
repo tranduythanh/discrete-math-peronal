@@ -1,0 +1,16 @@
+\begin{figure}[hbt!]
+\centering
+\begin{tikzpicture}[fill=gray]
+      \draw ( 0,0 ) circle (2) (-0.5,1.2)  node [text=black,above] {$P$}
+            ( 3,0 ) circle (2) (3.8,1.2)  node [text=black,above] {$Q$}
+            (-3,-3) rectangle (9,4) node [text=black,above] {$\mathcal U$};
+      \filldraw[black] (1.3,0) circle (2pt) node[anchor=west] {$a$};
+      \filldraw[black] (3,0) circle (2pt) node[anchor=west] {$b$};
+\end{tikzpicture}
+\caption{Venn diagram for problem 1.1.1 \\
+      - P: is the set of $x$ satisfies $p(x)$.\\
+      - Q: is the set of $x$ satisfies $q(x)$.\\
+      - $a$ is the point satisfies $p(x) \land q(x)$.\\
+      - $\exists b\in\mathcal U: \neg (p(b)\land q(b))$ so given argument is invalid
+}
+\end{figure}

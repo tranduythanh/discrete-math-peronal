@@ -1,0 +1,10 @@
+**/**/a
+**/**.fdb_latexmk
+**/**.fls
+**/**.log
+**/**.pdf
+**/**.synctex.gz
+**/**.thm
+**/**.DS_Store
+**/**.aux
+**/**.exe
