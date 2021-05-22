@@ -1,7 +1,67 @@
-
+\newpage
 \begin{longfbox}
-      \begin{bt} \label{pro:practice1.6}
-            
+      \begin{bt} \label{pro:practice1.5}
+            Các tập được xét đến đều là tập con của một tập vũ trụ $\mathcal U$ nào đó. Hãy kiểm tra các đẳng thức tập hợp sau đây
       \end{bt}
 \end{longfbox}
-  
+
+Solution:
+\begin{enumerate}
+\item[a)] $(A\cap B)\cup(A\cap B\cap C) = A\cap B$ \\
+      \begin{align}
+            (A\cap B)\cup(A\cap B\cap C)
+            &= (A\cap B\cap\mathcal U)\cup(A\cap B\cap C) \\
+            &= A\cap B\cap (\mathcal U\cup C) \\
+            &= A\cap B\cap\mathcal U \\
+            &= A\cap B
+      \end{align} 
+      So, proved!
+\item[b)] $(A\cup B)\cap(A\cup B\cup C) = A\cup B$ \\
+      \begin{align}
+            (A\cup B)\cap(A\cup B\cup C)
+            &= (A\cup B\cup\emptyset)\cap(A\cup B\cup C) \\
+            &= A\cup B\cup (\emptyset\cap C) \\
+            &= A\cup B\cup\emptyset \\
+            &= A\cup B
+      \end{align} 
+      So, proved!
+\item[c)] $(A\cap B)^\mathsf{c} = A^\mathsf{c}\cup B^\mathsf{c}$ \\
+      Let $M = (A\cap B)^\mathsf{c}$ and $N = A^\mathsf{c}\cup B^\mathsf{c}$ \\
+      Let $x$ be an arbitrary element of $M$, then
+      \begin{align}
+            x\in M &\Rightarrow x\in(A\cap B)^\mathsf{c} \\
+            &\Rightarrow x \notin (A \cap B) \\
+            &\Rightarrow x \notin A \lor x \notin B \\
+            &\Rightarrow x \in A^\mathsf{c} \lor x \in B^\mathsf{c} \\
+            &\Rightarrow x \in A^\mathsf{c} \cup B^\mathsf{c} \\
+            &\Rightarrow x \in N \\
+            &\Rightarrow M \subset N \label{eqn:600}
+      \end{align}
+      Again, let $y$ be an arbitrary element of $N$, then
+      \begin{align}
+            y \in N &\Rightarrow y \in A^\mathsf{c} \cup B^\mathsf{c} \\
+            &\Rightarrow y \in A^\mathsf{c} \lor y \in B^\mathsf{c} \\
+            &\Rightarrow y \notin A \lor y \notin B \\
+            &\Rightarrow y \notin (A \cap B) \\
+            &\Rightarrow y \in (A \cap B)^\mathsf{c} \\
+            &\Rightarrow y \in M \\
+            &\Rightarrow N \subset M \label{eqn:601}
+      \end{align}
+      Now combine \ref{eqn:600} and \ref{eqn:601}, we get $M = N$ i.e. $(A \cap B)^\mathsf{c} = A^\mathsf{c} \cup B^\mathsf{c}$
+\item[d)] $(A\cap B\cap C)\cup(A\cap B\cap C^\mathsf{c})= A\cap B$
+      \begin{align}
+            (A\cap B\cap C)\cup(A\cap B\cap C^\mathsf{c})
+            &= A\cap B\cap (C\cup C^\mathsf{c}) \\
+            &= A\cap B\cap\mathcal U \\
+            &= A\cap B
+      \end{align} 
+      So, proved!
+\item[e)] $(A^\mathsf{c}\cap(B\cup C))^\mathsf{c} = (A\cup B^\mathsf{c})\cap(A\cup C^\mathsf{c})$ \\
+      \begin{align}
+            (A^\mathsf{c}\cap(B\cup C))^\mathsf{c}
+            &= A\cup(B\cup C)^\mathsf{c} \\
+            &= A\cup(B^\mathsf{c}\cap C^\mathsf{c}) \\
+            &= (A\cup B^\mathsf{c})\cap(A\cup C^\mathsf{c})
+      \end{align} 
+      So, proved!
+\end{enumerate}
