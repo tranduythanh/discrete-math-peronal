@@ -1,0 +1,53 @@
+
+\begin{longfbox}
+      \begin{bt} \label{pro:practice1.5}
+            Các tập được xét đến đều là tập con của một tập vũ trụ $\mathcal U$ nào đó. Hãy kiểm tra các đẳng thức tập hợp sau đây
+      \end{bt}
+\end{longfbox}
+
+Solution:
+\begin{enumerate}
+\item[a)] $A\cap (A^\mathsf{c}\cup B\cup C) = (A\cap B)\cup(A\cap C)$ \\
+      \begin{align}
+            A\cap (A^\mathsf{c}\cup B\cup C)
+            &= (A\cap A^\mathsf{c})\cup (A\cap(B\cup C)) \\
+            &= \emptyset\cup(A\cap(B\cup C)) \\
+            &= A\cap(B\cup C) \\
+            &= (A\cap B)\cup(A\cap C)
+      \end{align} 
+      So, proved!
+\item[b)] $(A\cap B\cap C^\mathsf{c})\cup(A\cap B^\mathsf{c}\cap C) = A\cap (B\bigtriangleup C)$ \\
+      \begin{align}
+            A\cap (B\bigtriangleup C)
+            &= A\cap((B\setminus C)\cup(C\setminus B)) \\
+            &= A\cap((B\cap C^\mathsf{c})\cup(C\cap B^\mathsf{c})) \\
+            &= (A\cap B\cap C^\mathsf{c})\cup(A\cap B^\mathsf{c}\cap C)
+      \end{align} 
+      So, proved!
+\item[c)] $(A\cap B\cap C^\mathsf{c})\cup(A\cap B^\mathsf{c}\cap C^\mathsf{c}) = A\cap C^\mathsf{c}$ \\
+      \begin{align}
+            (A\cap B\cap C^\mathsf{c})\cup(A\cap B^\mathsf{c}\cap C^\mathsf{c})
+            &= (A\cap C^\mathsf{c}\cap B)\cup(A\cap C^\mathsf{c}\cap B^\mathsf{c}) \\
+            &= A\cap C^\mathsf{c}\cap(B\cup B^\mathsf{c}) \\
+            &= A\cap C^\mathsf{c}\cap\mathcal U \\
+            &= A\cap C^\mathsf{c}
+      \end{align} 
+      So, proved!
+\item[d)] $(A\cap(B\cap C)^\mathsf{c}) = (A\cap B^\mathsf{c})\cup(A\cap C^\mathsf{c})$ \\
+      \begin{align}
+            (A\cap(B\cap C)^\mathsf{c})
+            &= A\cap(B^\mathsf{c}\cup C^\mathsf{c}) \\
+            &= (A\cap B^\mathsf{c})\cup(A\cap C^\mathsf{c})
+      \end{align} 
+      So, proved!
+\item[e)] $(A\cup(B\cap C)^\mathsf{c}) = (A\cup B^\mathsf{c})\cup(A\cup C^\mathsf{c})$ \\
+      \begin{align}
+            (A\cup(B\cap C)^\mathsf{c})
+            &= A\cup(B^\mathsf{c}\cup C^\mathsf{c}) \\
+            &= A\cup B^\mathsf{c}\cup C^\mathsf{c} \\
+            &= A\cup A\cup B^\mathsf{c}\cup C^\mathsf{c} \\
+            &= A\cup B^\mathsf{c}\cup A\cup C^\mathsf{c} \\
+            &= (A\cup B^\mathsf{c})\cup (A\cup C^\mathsf{c})
+      \end{align} 
+      So, proved!
+\end{enumerate}

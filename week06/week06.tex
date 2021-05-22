@@ -1,6 +1,4 @@
 \newpage
-\chapter{Mappings and Sets}
-Leave this page blank Intentionally.
 \chapter{Logic and Proofs}
 \section{Personal Practice}
 \begin{bt} \end{bt}
@@ -394,6 +392,8 @@ Solution:
             \end{tabular}
         \end{table}
 
+        So, above statement is \textbf{valid}
+
     \item[(b)] Let: \\
         - $s$ is statement "study" \\
         - $f$ is statement "fail mathematics" \\
@@ -403,7 +403,7 @@ Solution:
             \item[] $\neg s$
             \item[] $\therefore f$
         \end{enumerate}
-        In case: $s=F, f=F$, then $(s\rightarrow \neg f) \land \neg s= T = \neg f$ so above statement is invalid
+        In case: $s=\mathbb{0}, f=\mathbb{0}$, then $(s\rightarrow \neg f) \land \neg s = \mathbb{1} = \neg f$ so above statement is \textbf{invalid}
 
     \newpage
     \item[(c)] Let: \\
@@ -434,6 +434,8 @@ Solution:
             \hline
             \end{tabular}
         \end{table}
+        
+        So, above statement is \textbf{valid}
 
     \item[(d)] Let: \\
         - $b$ is statement "It is wife's birthday" \\
@@ -449,7 +451,7 @@ Solution:
         \end{enumerate}
         In case $s=\mathbb{1}, f=\mathbb{1}, w=\mathbb{1}$ \\
         then $b\land f = \mathbb{1}, b\lor w = \mathbb{1}$ \\
-        then $(b\land f) \land (b\lor w) \land \neg f = \mathbb{0} \neq w$ so above statement is invalid
+        then $(b\land f) \land (b\lor w) \land \neg f = \mathbb{0} \neq w$ so above statement is \textbf{invalid}
     
     \newpage
     \item[(e)] Let: \\
@@ -465,7 +467,7 @@ Solution:
         \end{enumerate}
         In case $w=\mathbb{0}, p=\mathbb{0}, s=\mathbb{1}$ \\
         then $w\rightarrow \neg s = \mathbb{1}, w\lor p = \mathbb{0}$ \\
-        then $w(\rightarrow \neg s) \land (w\lor p) \land p = \mathbb{0} \neq s$ so above statement is invalid
+        then $w(\rightarrow \neg s) \land (w\lor p) \land p = \mathbb{0} \neq s$ so above statement is \textbf{invalid}
     
     \item[(f)] Let: \\
         - $w$ is statement "I work" \\
@@ -480,7 +482,7 @@ Solution:
         \end{enumerate}
         In case $w=\mathbb{1}, p=\mathbb{1}, s=\mathbb{1}$ \\
         then $w\rightarrow \neg s = \mathbb{0}, w\lor p = \mathbb{1}$ \\
-        then $w(\rightarrow \neg s) \land (w\lor p) \land w = \mathbb{0} \neq p$ so above statement is invalid
+        then $w(\rightarrow \neg s) \land (w\lor p) \land w = \mathbb{0} \neq p$ so above statement is \textbf{invalid}
 \end{enumerate}
 
 \newpage
@@ -500,7 +502,7 @@ Solution:
             \begin{align}
                 \displaystyle\sum^{1}_{i=1} i &= \frac{1(1+1)}{2} = 1 \label{eqn:2}
             \end{align}
-        Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+        Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
         \begin{align}
             \displaystyle\sum^{k+1}_{i=1} i &= \displaystyle\sum^{k}_{i=1} i + (k+1) \\
                                             &= \frac{k(k+1)}{2} + (k+1) \\
@@ -517,7 +519,7 @@ Solution:
             \begin{align}
                 \displaystyle\sum^{1}_{i=1} i^2 &= \frac{1(1+1)(2+1)}{6} = 1 \label{eqn:5}
             \end{align}
-        Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+        Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
         \begin{align}
             \displaystyle\sum^{k+1}_{i=1} i^2 &= \displaystyle\sum^{k}_{i=1} i^2 + (k+1)^2 \\
                                             &= \frac{k(k+1)(2k+1)}{6} + (k+1)^2 \\
@@ -535,7 +537,7 @@ Solution:
             \begin{align}
                 \displaystyle\sum^{1}_{i=1} i^3 &= \frac{1^2(1+1)^2}{4} = 1 \label{eqn:8}
             \end{align}
-        Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+        Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
         \begin{align}
             \displaystyle\sum^{k+1}_{i=1} i^3 &= \displaystyle\sum^{k}_{i=1} i^3 + (k+1)^3 \\
                                             &= \frac{k^2(k+1)^2}{4} + (k+1)^3 \\
@@ -552,7 +554,7 @@ Solution:
             \begin{align}
                 \displaystyle\sum^{1}_{i=0} (2i+1)^2 &= \frac{(1+1)(2*1+1)(2*1+3)}{3} = 10 \label{eqn:11}
             \end{align}
-        Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+        Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
         \begin{align}
             \displaystyle\sum^{k+1}_{i=0} (2i+1)^2 &= \displaystyle\sum^{k}_{i=0} (2i+1)^2 + (2(k+1)+1)^2 \\
                                             &= \frac{(k+1)(2k+1)(2k+3)}{3} + (2k+3)^2 \\
@@ -570,7 +572,7 @@ Solution:
             \begin{align}
                 \displaystyle\sum^{1}_{i=1} i(i+1) &= \frac{1(1+1)(1+2)}{3} = 2 \label{eqn:14}
             \end{align}
-        Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+        Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
         \begin{align}
             \displaystyle\sum^{k+1}_{i=1} i(i+1) &= \displaystyle\sum^{k}_{i=1} i(i+1) + (k+1)((k+1)+1) \\
                                             &= \frac{k(k+1)(k+2)}{3} + (k+1)(k+2) \\
@@ -587,7 +589,7 @@ Solution:
             \begin{align}
                 \displaystyle\sum^{1}_{i=1} i(i+1)(i+2) &= \frac{1(1+1)(1+2)(1+3)}{4} = 6 \label{eqn:17}
             \end{align}
-        Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+        Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
         \begin{align}
             \displaystyle\sum^{k+1}_{i=1} i(i+1)(i+2) &= \displaystyle\sum^{k}_{i=1} i(i+1)(i+2) + (k+1)(k+2)(k+3) \\
                                             &= \frac{k(k+1)(k+2)(k+3)}{4} + (k+1)(k+2)(k+3) \\
@@ -605,7 +607,7 @@ Solution:
             \begin{align}
                 \displaystyle\sum^{1}_{i=1} ii! &= (1+1)!-1 = 1 \label{eqn:20}
             \end{align}
-        Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+        Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
         \begin{align}
             \displaystyle\sum^{k+1}_{i=1} ii! &= \displaystyle\sum^{k}_{i=1} ii! + (k+1)(k+1)! \\
                                             &= (k+1)!-1 + (k+1)(k+1)! \\
@@ -623,7 +625,7 @@ Solution:
         \begin{align}
             \displaystyle\sum^{2}_{i=1} \frac{1}{i(i+1)} &= \frac{2}{2+1} = \frac{2}{3} \label{eqn:23}
         \end{align}
-    Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+    Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
     \begin{align}
         \displaystyle\sum^{k+1}_{i=1} \frac{1}{i(i+1)} &= \displaystyle\sum^{k}_{i=1} \frac{1}{i(i+1)} + \frac{1}{(k+1)(k+2)} \\
                                         &= \frac{k}{k+1} + \frac{1}{(k+1)(k+2)} \\
@@ -643,7 +645,7 @@ Solution:
         \begin{align}
             \displaystyle\sum^{1}_{i=1} i2^i &= (1-1)2^{1+1}+2 = 2 \label{eqn:26}
         \end{align}
-    Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+    Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
     \begin{align}
         \displaystyle\sum^{k+1}_{i=1} i2^i &= \displaystyle\sum^{k}_{i=1} i2^i + (k+1)2^{k+1} \\
                                         &= (k-1)2^{k+1} +2 + (k+1)2^{k+1} \\
@@ -661,7 +663,7 @@ Solution:
         \begin{align}
             \displaystyle\sum^{1}_{i=1} ia^i &= \frac{1a^{1+2}-(1+1)a^{1+1}+a}{(a-1)^2} = a \label{eqn:29}
         \end{align}
-    Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+    Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
     \begin{align}
         \displaystyle\sum^{k+1}_{i=1} ia^i &= \displaystyle\sum^{k}_{i=1} ia^i + (k+1)a^{k+1} \\
                                         &= \frac{ka^{k+2}-(k+1)a^{k+1}+a}{(a-1)^2} + (k+1)a^{k+1} \\
@@ -679,7 +681,7 @@ Solution:
         \begin{align}
             \displaystyle\sum^{1}_{i=1} i^22^i &= 1^22^{1+1}-1.2^{1+2}+3.2^{1+1}-6 = 2 \label{eqn:32}
         \end{align}
-    Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+    Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
     \begin{align}
         \displaystyle\sum^{k+1}_{i=1} i^22^i &= \displaystyle\sum^{k}_{i=1} i^22^i + (k+1)^22^{k+1} \\
                                         &= k^22^{k+1}-k2^{k+2}+3.2^{k+1}-6 + (k+1)^22^{k+1} \\
@@ -696,7 +698,7 @@ Solution:
         \begin{align}
             \displaystyle\sum^{1}_{i=1} i^22^{n-i} &= 2^{1+3}-2^{1+1}-1^2-4.1-6 = 1 \label{eqn:35}
         \end{align}
-    Induction: Assume that above statement is correct with an arbitrary $k \geq 0$, then\\
+    Induction: Assume that above statement is correct with an some $k \geq 0$, then\\
     \begin{align}
         \displaystyle\sum^{k+1}_{i=1} i^22^{n-i} &= \displaystyle\sum^{k}_{i=1} i^22^{n-i} + (k+1)^22^{n-i} \\
                                         &= 2^{k+3}-2^{k+1}-k^2-4k-6 + (k+1)^22^{k+1} \\
@@ -750,7 +752,7 @@ Solution:
             \frac{1}{2.1-1}-\frac{1}{2.1} + \frac{1}{2.2-1}-\frac{1}{2.2} = \frac{7}{12} \label{eqn:43}
         \end{align}
     
-    Induction: Assume that above statement is correct with an arbitrary $k \geq 2$, and based on \ref{eqn:40}:\\
+    Induction: Assume that above statement is correct with an some $k \geq 2$, and based on \ref{eqn:40}:\\
     \begin{align}
         \forall n\geq 2: \displaystyle\sum^{k+1}_{i=1} \frac{1}{k+1+i} &=\
         \displaystyle\sum^{k}_{i=1} \frac{1}{k+i} -\frac{1}{k+1}+\frac{1}{2k+1}+\frac{1}{2k+2} \\
